@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        (function(w, d, t, h, s, n) {
+          w.FlodeskObject = n;
+          var fn = function() {
+            (w[n].q = w[n].q || []).push(arguments);
+          };
+          w[n] = w[n] || fn;
+          var f = d.getElementsByTagName(t)[0];
+          var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+          var sm = d.createElement(t);
+          sm.async = true;
+          sm.type = 'module';
+          sm.src = h + s + '.mjs' + v;
+          f.parentNode.insertBefore(sm, f);
+          var sn = d.createElement(t);
+          sn.async = true;
+          sn.noModule = true;
+          sn.src = h + s + '.js' + v;
+          f.parentNode.insertBefore(sn, f);
+        })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+      </script>
+</head>
+<body>
+    <main>
+        <nav class="navBar">
+            <h1>Laxmi Rahangdale Portfolio</h1>
+            <div class="navigationMenu">
+                <a href="#aboutMe">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contactForm">Let's Connect!</a>
+            </div>
+        </nav>
+        <section class="heroSection">
+            <img class="profileImage" src="/Img/Lax pic.jpg " alt="">
+            <div class="heroSectionDetails">
+                <h1 data-text="&nbsp;Laxmi Rahangdale&nbsp;">&nbsp;Laxmi Rahangdale&nbsp;</h1>
+                <h3>Full Stack Web Developer Intern</h3>
+            </div>
+        </section>
+        <section class="aboutMe" id="aboutMe">
+            <h1>What I do...</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem error nulla quo quia facere, labore in voluptatibus quam aspernatur neque, repellendus eveniet dicta iusto commodi ad. Veritatis odio numquam incidunt enim distinctio hic tempora, eaque modi aspernatur voluptas, fugit ut, saepe rem?<span><!-- THESE TEXT WILL BE HIDDEN IN MOBILE SCREENS... -->Laudantium, tenetur non officiis deleniti voluptate blanditiis fuga optio enim facilis aspernatur? Amet libero tempore distinctio asperiores quidem, corporis perspiciatis. Totam non ad reprehenderit ullam atque incidunt autem voluptate, iure soluta. Nisi fuga nesciunt maxime sit eveniet quam natus! Officia, maiores? Dolore, iure explicabo, excepturi odit vero laborum libero fuga laboriosam itaque harum modi alias qui, quas minus.</span></p>
+        </section>
+        <section class="skillsAndProjects">
+            <div class="skills" id="skills">
+                <h1 class="cardHeading">Skills</h1>
+                <img src="/Img/html5-svgrepo-com.svg" title="html">
+                <img src="/Img/css-svgrepo-com.svg" title="CSS">
+                <img src="/Img/js-svgrepo-com.svg" title="Javascipt">
+                <img src="/Img/node-svgrepo-com.svg" title="Node.js">
+                <img src="/Img/reactjs-svgrepo-com.svg" title="React">
+                <img src="/Img/mongodb-svgrepo-com.svg" title="MongoDB">
+                <img src="/Img/firebase-svgrepo-com.svg" title="firebase">
+                <img src="/Img/redux-svgrepo-com.svg" title="Redux">
+            </div>
+            <div class="projects" id="projects">
+                <h1 class="cardHeading">Projects</h1>
+                <div class="projectContainer">
+                    <img src="/Img/Prime_Video-Logo.wine.svg" title="Prime Video Clone">
+                    <div class="projectDesc">
+                        <a href="https://fanciful-lamington-44a0b2.netlify.app/" target="_blank"><h4>Prime Video Clone</h4></a>
+                        <hr>
+                        <p>Cloned the landing page of Amazon Prime Video</p>
+                    </div>
+                    &nbsp;
+                    <img src="/Img/css-svgrepo-com.svg" title="My 2nd Project">
+                    <div class="projectDesc">
+                        <a href="http://corndog.io/" target="_blank"><h4>Project Name</h4></a>
+                        <hr>
+                        <p>Some details of the project. Some details of the project. Some details of the project.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contactForm" id="contactForm">
+            <h1>Let's Connect!</h1>
+            <div class="formGroup">
+                <label for="name">Enter Full Name</label><br>
+                <input type="text" id="name" placeholder="Full Name" autocomplete="off">
+            </div>
+            <div class="formGroup">
+                <label for="email">Email</label><br>
+                <input type="text" id="email" placeholder="Email" autocomplete="off">
+            </div>
+            <div class="formGroup">
+                <label for="message">Message</label><br>
+                <textarea name="w3review" id="message" cols="50" rows="4" placeholder="Send some message!"></textarea>
+            </div>
+            <button class="submitButton" onclick={submit()}>Connect</button>
+        </section>
+        <!-- <section class="connection">
+            <div id="fd-form-62fb90347285b4acab046eb1"></div>
+<script>
+  window.fd('form', {
+    formId: '62fb90347285b4acab046eb1',
+    containerEl: '#fd-form-62fb90347285b4acab046eb1'
+  });
+</script>
+        </section> -->
+    </main>
+</body>
+</html>
